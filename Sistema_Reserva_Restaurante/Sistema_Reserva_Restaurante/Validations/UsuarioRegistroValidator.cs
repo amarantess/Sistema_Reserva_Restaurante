@@ -15,7 +15,6 @@ namespace Sistema_Reserva_Restaurante.Validations
 				.NotEmpty().WithMessage(ResourceMessagesException.EMAIL_VAZIO);
 
 			RuleFor(u => u.Senha)
-				.NotEmpty().WithMessage(ResourceMessagesException.SENHA_VAZIA)
 				.MinimumLength(6).WithMessage(ResourceMessagesException.SENHA_INVALIDA);
 
 			When(user => string.IsNullOrEmpty(user.Email) == false, () =>

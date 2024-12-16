@@ -97,6 +97,15 @@ namespace Sistema_Reserva_Restaurante.Exceptions {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to O Id não pode ser vazio..
+        /// </summary>
+        public static string ID_VAZIO {
+            get {
+                return ResourceManager.GetString("ID_VAZIO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to O nome não pode ser vazio..
         /// </summary>
         public static string NOME_VAZIO {
@@ -111,15 +120,6 @@ namespace Sistema_Reserva_Restaurante.Exceptions {
         public static string SENHA_INVALIDA {
             get {
                 return ResourceManager.GetString("SENHA_INVALIDA", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to A senha não pode ser vazia..
-        /// </summary>
-        public static string SENHA_VAZIA {
-            get {
-                return ResourceManager.GetString("SENHA_VAZIA", resourceCulture);
             }
         }
     }
