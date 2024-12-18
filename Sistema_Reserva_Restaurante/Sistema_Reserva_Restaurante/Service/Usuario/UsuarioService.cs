@@ -42,9 +42,12 @@ namespace Sistema_Reserva_Restaurante.Service.Usuario
 
 			return new ResponseRegistered
 			{
-				Nome = usuarioRegistroDto.Nome
+				Nome = usuario.Nome
 			};
 		}
+
+
+		// Método de validação
 
 		private async Task Validate(UsuarioRegistroDto usuarioRegistroDto)
 		{
